@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{%  block start %}
+<h2>Welcome to the Green World!</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">s.no</th>
+        <th scope="col">name</th>
+        <th scope="col">price</th>
+     
+      </tr>
+    </thead>
+    <tbody>
+      {% for plant in plants %}
+    {% if plant.price >= 100 %}
+      <tr>
+        <td>{{forloop.counter}} </td>
+        <td>{{plant.name}}</td>
+        <td>{{plant.price}}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+
+{%  endblock %}

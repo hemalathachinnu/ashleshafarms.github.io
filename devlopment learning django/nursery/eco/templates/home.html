@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ashlesha Farms</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./script.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
+        <style>
+            
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.scroll{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background-color:#25693F;
+    color: white;
+}
+.header{
+    height: 155px;
+    background-color: #F8C027;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu{
+    margin-left: 20px;
+    i{
+        font-size: 25px;
+    }
+}
+.header__searchandcart{
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+    i{
+        font-size:25px;
+    }
+}
+.navbar {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 2em;
+}
+.main2__heading{
+    h1{
+        font-family: sans-serif;
+        margin-left: 30px;
+        font-size: 40px;
+        margin-top: 70px;
+    }
+}
+.main2 h1{
+    text-align: center;
+}
+.main2__photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    img{
+        border-radius: 10px;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .name{
+        font-family: serif;
+        color: #1A1A1A;
+        font-size: medium;
+    }
+    
+    }
+.main3 h1,h2{
+    text-align: center;
+}
+    .main3__photos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        img{
+            border-radius: 10px;
+        }
+        .image{
+            display: inline-block;
+            
+            align-items: center;
+        }
+        .name{
+            font-family: serif;
+            color: #1A1A1A;
+        }
+        
+        }
+    
+.main4{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    p{
+        font-family: lora,serif;
+        color: #1A1A1A;
+        font-size:16px;
+    }
+}
+.main5{
+    margin-top: 50px;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: #F8C027;
+    flex-direction: column;
+    /* align-items: center; */
+    .heading{
+        margin-left: 23%;
+        padding-top: 40px;
+        color: red;
+        font-family:sans-serif;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    .section{
+        font-family: serif;
+        font-weight: bolder;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .rule{
+        margin-top: 30px;
+        padding-left: 80px;
+        padding-right : 80px;
+    }
+    .content{
+        margin-top: 50px;
+        padding-bottom: 30px;
+        padding-left: 80px;
+        padding-right : 80px;
+        font-size: 20px;
+    }
+}
+.main6{
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    gap: 50px ;
+    background-color: white;
+    .photo{
+        flex: 1;
+        img{
+            border-radius: 10px;
+        }
+    }
+    .order{
+        display: flex;
+        flex-direction: column;
+
+        flex: 1;
+        font-family: sans-serif;
+        font-size: 25px;
+        .color{
+            color: green;
+        }
+        .kg{
+            background-color: white;
+            border:1px solid lightgray;
+            padding: 20px;
+            border-radius: 30px;
+            width: 100px;
+        }
+        .kg:hover{
+            border: 2px solid black;
+        }
+        .shipping{
+            /* border: 1px solid green; */
+            background-color: #EAF2ED;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 25px;
+            color: darkgreen;
+        }
+        .cart{
+            margin-top: 60px;
+            .cartbutton{
+                width: 100%;
+                padding: 10px;
+                border-radius: 30px;
+                background-color: darkgreen;
+                color: white;
+                font-family: sans-serif;
+                font-weight: bold;
+                height: 60px;
+                border: none;
+            }
+            .cartbutton:hover{
+                background-color: rgba(0, 100, 0, 0.731);
+            }
+        }
+
+    }
+}
+.main7{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    .pic{
+        border-radius: 10px;
+    }
+}
+.gohealthy{
+    background-color: white;
+    .health{
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 2vw;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    .section1{
+        input{
+            background-color: transparent;
+            border: 1px solid gray;
+            width: 22vw;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input:hover{
+            border: 1px solid gray;
+        }
+
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        a{
+            color: #1a1a1a71;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        .sp{
+            color: #1a1a1a71;
+        }
+    }
+}
+.lastfooter{
+    margin-top: 20px;
+    background-color: #F8C027;
+    padding-bottom: 10px;
+    .insta{
+        margin-top: 15px;
+        margin-left: 50px;
+        /* margin-bottom: 20px; */
+        font-size: 2vw;
+        color: rgba(0, 0, 0, 0.767);
+    }
+    .bunny{
+        margin-left: 50px;
+        font-size: 18px;
+        color: #1a1a1a71;
+        margin-bottom: 20px;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <header style="background-color: rgb(255, 255, 255); padding-top:20px;">
+            <div class="top-header" style="display: flex; justify-content: space-between; align-items: center;">
+              <div class="logo">
+                <a href="#" style="color: black; font-size: 1.8rem; text-decoration: none; padding-left: 38px;">Ashlesha Farms</a>
+              </div>
+          
+              <div class="search-bar" style="flex-grow: 1; text-align: center; padding-left:200px">
+                <input type="text" placeholder="Search..." style="padding: 0.7rem; width: 600px; border-radius: 5px; border:lavender;">
+                <a href="#search"style= border:black class="fa fa-search"></i></a>
+                <a href="#cart"style=padding-left:314px class="fa fa-shopping-cart"></i></a> 
+              </div>
+          
+            </div>
+          
+            <nav style="text-align: left; margin-top: 1rem;">
+              <ul style="list-style: none; display:flex; gap: 2rem; text-align:left">
+                <li><a href="/home/" style="color: black; text-decoration: none; font-size: 1.2rem;">Home</a></li>
+                <li><a href="#about" style="color: black; text-decoration: none; font-size: 1.2rem;">About</a></li>
+                <li><a href="#shop" style="color: black; text-decoration: none; font-size: 1.2rem;">Shop</a></li>
+                <li><a href="#contact" style="color: black; text-decoration: none; font-size: 1.2rem;">Contact</a></li>
+                <li><a href="/register/" style="text-decoration: none; color: black; font-size: 1.3rem; padding-left:1065px">Login</a></li>
+              </ul>
+            </nav>
+          </header>
+           
+        
+        <div class="main1">
+            <img src="https://www.heartyculturenursery.com/cdn/shop/files/Untitled_design_2_1899x625_crop_center.jpg?v=1691581377" alt="Error" width="100%">
+        </div>
+        <div class="main2">
+            <div class="main2__heading">
+                <h1>Go Natural, Go Healthy.</h1>
+            </div>
+            <div class="main2__photos">
+                
+                <div class="img1 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/Spathyphyllum_404x404.jpg?v=1637468992" alt="Error" height="300" width="320">
+                    <p class="name">Indoor Plants</p>
+                </div>
+                
+                <div class="img2 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/002_2f7864b6-4c75-4713-8e5e-ca0714c39859_404x404.png?v=1631528610" alt="Error" height="300" width="320">
+                    <p class="name">NASA recommended Air Purifying Plants</p>
+                    
+                </div>
+
+                <div class="img3 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/002_10_404x404.jpg?v=1633236420" alt="Error" height="300" width="320">
+                    <p class="name">Cactus & Succulents</p>
+                </div>
+
+                <div class="img4 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/Justiciaadhatoda_404x404.jpg?v=1608906478" alt="Error" height="300" width="320">
+                    <p class="name">Medicinal Trees</p>
+                </div>
+
+                <div class="img5 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/004_3_c069fa9f-ca0d-451b-b1fd-6338eea6758d_404x404.png?v=1633842281" alt="Error" height="300" width="320">
+                    <p class="name">Fruit Trees</p>
+                   
+                </div>
+
+                <div class="img6 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/Parijathcoraljasmine_404x404.jpg?v=1622831365" alt="Error" height="300" width="320">
+                    <p class="name">Outdoor Plants</p>
+                </div>
+
+                <div class="img7 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/001_8e7f4be7-224f-403e-bf56-bf6a2a5129fb_404x404.png?v=1631507858" alt="Error" height="300" width="320">
+                    <p class="name">Ornamantal Trees</p>
+                </div>
+
+                <div class="img8 image">
+                    <img src="https://www.heartyculturenursery.com/cdn/shop/products/513A8963_404x404.png?v=1636172462" alt="Error" height="300" width="320">
+                    <p class="name">Flowering Trees</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="main3"><br><br>
+            <h1>ORGANIC FERTILIZERS</h1><br><br>
+            <img src="https://vaaradhifarms.com/cdn/shop/files/midjourneyexpert_white_indian_desi_cow_standing_next_to_a_small_26e9dd34-2704-41bc-8611-96d3fc2fd338.png?v=1690866620&width=1440" alt="Error" width="100%" height="400">
+            <br><h1>Go Natural, Go Healthy.</h1><br>
+            <div class="main3__photos">
+                
+                <div class="img1 image">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/742/922/non_2x/cow-dung-in-the-farm-photo.JPG" alt="Error" height="300" width="320">
+                    <p class="name">cow manure</p>
+                </div>
+                
+                <div class="img2 image">
+                    <img src="https://www.resetagri.in/cdn/shop/products/41koC2jnhrL.jpg?v=1688426198" alt="Error" height="300" width="320">
+                    <p class="name">usage</p>
+                    
+                </div>
+
+                <div class="img3 image">
+                    <img src="https://img.lazcdn.com/g/p/cfcbed7e1c7706f30bb742fc46611a8e.jpg_720x720q80.jpg" alt="Error" height="300" width="320">
+                    <p class="name">cocopeat</p>
+                </div>
+
+                <div class="img4 image">
+                    <img src="https://prd-upmarket.s3.ap-south-1.amazonaws.com/AA0044/generated/ar16x9/large/seedgerminationincocopeatblogimage-Large.png" alt="Error" height="300" width="320">
+                    <p class="name">usage</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="main2">
+            <div class="main2__heading"><br><br>
+                <h1>Natural Products.</h1>
+            </div>
+            <div class="main2__photos">
+                
+                <div class="img1 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/deepixelstudios_wild_turmeric_powder_in_a_pouch_1080x1080_a5f1c16c-5f91-4fc1-b586-b6b292eb5c21.png?v=1714064248&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Forest Turmeric Powder <br>
+                        </p>
+                </div>
+                
+                <div class="img2 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/Adityark_a_bag_of_a_tan_colored_product_filled_with_turmeric_ki_30bdb482-db0c-4404-8b6c-cb59bec40502.png?v=1685016262&width=800" alt="Error" height="300" width="320">
+                    <p class="name">Natural Turmeric <br>
+                         </p>
+                    
+                </div>
+
+                <div class="img3 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/image_519177bc-9938-4cfb-b9ad-8b723ca31af2.png?v=1689100808&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Natural Red Chilli Powder <br>
+                     </p>
+                </div>
+
+                <div class="img4 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/nazmul1988_cashew_nuts_86146f47-1350-4b10-9605-3a13465811c4.png?v=1714074548&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Hand Pounded cashews <br>
+                        </p>
+                </div>
+
+                <div class="img5 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/tor.hov_pile_of_dry_saffron_threads_fills_up_frame_pleasing_mac_214b13c2-e76a-43f8-bc20-93d017b80b1e.png?v=1705982784&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Kashmiri Saffron 1gm</p>
+                   
+                </div>
+
+                <div class="img6 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/ecommified_brown_mango_pickle_in_a_bowl_front_angle_kitchen_bac_1ef99a2f-2733-4f99-bbf3-7c14cbc7dcd5.webp?v=1717774635&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Mango Pickle</p>
+                </div>
+
+                <div class="img7 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/ecommified_dark_red_pickle_paste_soaking_in_oil_in_a_white_bowl_eef36501-a599-44f3-88c4-743bedafae43.webp?v=1717776675&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Gongura Pickle</p>
+                </div>
+
+                <div class="img8 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/ecommified_grated_dry_red_chilli_pickle_paste_in_a_white_bowl_f_6f4c1b1e-be34-4f0a-83d9-6fcde5168731.webp?v=1717779798&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Pandu Mirchi</p>
+                </div>
+                <div class="img9 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/ecommified_black_pickle_paste_soaking_in_oil_in_a_white_bowl_fr_ef09eb14-ea5c-400d-bceb-29779d7b725e.webp?v=1717780032&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Karivepaku Pickle</p>
+                </div>
+                <div class="img10 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/ecommified_red_lime_pickle_paste_in_a_white_bowl_table_backgrou_4f4a3c66-7924-44b2-8a54-f244a09c2cd3.webp?v=1717780772&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Usirikai Pickle</p>
+                </div>
+                <div class="img11 image">
+                    <img src="https://vaaradhifarms.com/cdn/shop/files/ecommified_red_tomato_pickle_paste_soaking_in_oil_in_a_white_bo_c71296a6-5057-4889-91bb-ef92c5b4b189.webp?v=1718338434&width=400" alt="Error" height="300" width="320">
+                    <p class="name">Tomato Pickle</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main4">
+            <div class="one">
+                <h1>Farm-to-Table Freshness</h1>
+                <p>Enjoy the vibrant flavors and superior quality of food <br>that has been carefully harvested and brought straight <br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; to your doorstep.</p>
+            </div>
+            <div class="two">
+                <h1>Pure and Clean Ingredients</h1>
+                <p style="margin-left: 20px;">Enjoy the peace of mind that comes from consuming <br>food free from harmful chemicals, pesticides, and<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  artificial additives.</p>
+            </div>
+            <div class="three">
+                <h1>Nutritional Excellence</h1>
+                <p>Our Products are packed with essential nutrients,<br> vitamins, and minerals, providing customers with<br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  optimal nutrition.</p>
+            </div>
+        </div>
+        <div class="main5">
+            <div class="heading">
+                <h1>Problems with Modern Farming</h1>
+            </div>
+            <div class="section">
+                <span>Synthetic Pesticides</span>
+                <span>Chemical Fertilizers</span>
+                <span>Genetically Modified Organisms</span>
+                <span>Enviromental Impact</span>
+            </div>
+            <div class="rule">
+                <hr style="color: black;">
+            </div>
+            <div class="content">
+                <p>Conventional farming relies on the use of synthetic pesticides, which are chemical substances specifically designed to kill or control pests that can damage crops. These pesticides are typically derived from artificial compounds and can have negative impacts on the environment, including soil degradation, water pollution, and harm to beneficial insects and wildlife.</p>
+        </div>
+        <div class="main6">
+            <div class="photo">
+                <img src="https://vaaradhifarms.com/cdn/shop/files/Adityark_a_bag_of_a_tan_colored_product_filled_with_turmeric_ki_30bdb482-db0c-4404-8b6c-cb59bec40502.png?v=1685016262&width=1024" alt="Error" height="750" width="100%">
+            </div>
+            <div class="order">
+                <h1>Natural  Turmeric</h1>
+                <p style="font-family: serif;">Rs.399.00</p>
+                <p class="color"><i class="fa fa-check" style="padding-right: 10px;"></i>Instock</p>
+                <p>4.9⭐</p>
+                <p>kg: 1/2kg</p>
+                <div class="button">
+                    <button class="kg">1/2kg</button>
+                    <button class="kg">1/4kg</button>
+                </div>
+                <div class="shipping">
+                    <i class="fa fa-truck"></i>
+                    <span>Free Shipping</span>
+                </div>
+                <div class="cart">
+                    <button class="cartbutton">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="main7">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/cashew-butter-dark-background.jpg?v=1682517374&width=3788" alt="Error" height="250" width="250"  class="pic">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/3d_website_redesign_18.png?v=1682333629&width=1080" alt="Error" height="250" width="250" class="pic">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/3d_website_redesign_19.png?v=1682419348&width=200" alt="Error" height="250" width="250" class="pic">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/70-706828_m.jpg?v=1682419516&width=450" alt="Error" height="250" width="250" class="pic">
+            <img src="https://vaaradhifarms.com/cdn/shop/files/Adityark_a_plastic_bottle_containing_coconut_oil__kitchen_backg_d9661f44-0401-48c6-afc7-e8f009044b04.png?v=1685032319&width=1024" alt="Error" height="250" width="250" class="pic">
+        </div>
+        <div class="gohealthy">
+            <marquee behavior="" direction="ltr" scrollamount="15" class="health">
+                <span><h1>Go Natural, Go Healthy.</h1></span>
+            </marquee>
+        </div>
+        <div class="footer">
+            <div class="section1">
+                <h1 style="font-family: sans-serif;">Sign up to our Newsletter</h1>
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="section2">
+                <h2 style="font-family: sans-serif;">Customer Care</h2>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Refund Policy</a>    
+                <a href="#">Cancellation Policy</a>    
+                <a href="#">Privacy Policy</a>    
+                <a href="#">Terms of Service</a>    
+                <a href="#">Contact Information</a>    
+                <a href="#">Wild forest honey certificate</a>    
+                <a href="#">Dark forest honey certificate</a>    
+            </div>
+            <div class="section3">
+                <h2 style="font-family: sans-serif;">Contact Info</h2>
+                <p class="sp">Trade Name : ashlessha Farms</p>
+                <p class="sp">Email Suppourt : ashlesshafarms@gmail.com</p>
+                <p class="sp">Customer care Number:</p>
+                <p class="sp">+91 7995514889</p>
+                <p class="sp">+91 89770 21197</p>
+                <p class="sp">Customer Support Timings : </p>
+                <p class="sp">10:30am to 6:30pm</p>
+                <p class="sp">Address :  Hyderabad</p>
+                <p class="sp">Pin - 501401</p>
+                
+            </div>
+        </div>
+        <div class="lastfooter">
+            <i class="fa fa-instagram insta" ></i>
+            <p class="bunny">© 2024, Ashlessha Farms.</p>
+        </div>
+    </body>
+</html>
